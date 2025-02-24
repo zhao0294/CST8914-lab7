@@ -81,9 +81,9 @@
       margin-right: 0;
     }
 
-    .menu a:focus {
+    /* make the focus outline visible on the last item */
+    .menu a:focus-visible {
       outline: 2px solid #006b3a;
-      background-color: rgba(0, 107, 58, 0.1);
     }
 
 
@@ -215,7 +215,7 @@
       <nav class="menu">
         <a href="#">Home</a>
         <a href="#">Politics</a>
-        <a href="#">Business</a>
+        <a href="#">Business</a> <!-- removed tabindex="-1", make the logo focusable  -->
         <a href="#">Entertainment</a>
         <a href="#">Sports</a>
         <a href="#" class="btn-search pull-right"><img
